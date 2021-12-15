@@ -3,7 +3,6 @@ class DeleteDuplicates{
         if (head == null || head.next == null) return head;
         ListNode prev = head, curr = head.next, after = curr.next;
         while(curr != null){
-            // System.out.println("curr " + curr.val);
             if(curr.val == prev.val){
                 prev.next = curr.next;
                 curr = curr.next;
