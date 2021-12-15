@@ -17,26 +17,26 @@ class DeleteDuplicates{
         return head;
     }
 
-    public class ListNode {														// Definition for singly-linked list.
+    public class ListNode {											// Definition for singly-linked list.
 		final int val;
 		ListNode next = null;
 		ListNode(int val) { this.val = val; }
 		ListNode(int val, ListNode prev) { this.val = val; prev.next = this; }
 	}
     // ----------- TESTING ------------
-    public ListNode makeList0(){												// ListNode = [] 
+    public ListNode makeList0(){										// ListNode = [] 
 		return null;
 	}
-	public ListNode makeList1(){												// ListNode = [1]
+	public ListNode makeList1(){										// ListNode = [1]
 		return new ListNode(1);
 	}
-    public ListNode makeList3(){												// ListNode = [1 2 3] 
+    public ListNode makeList3(){										// ListNode = [1 2 3] 
 		ListNode a = new ListNode(1);
 		ListNode b = new ListNode(2,a);
 		ListNode c = new ListNode(3,b);
 		return a;
 	}
-    public ListNode makeList5(){												// ListNode = [1 1 2 3 3] 
+    public ListNode makeList5(){										// ListNode = [1 1 2 3 3] 
 		ListNode a = new ListNode(1);
 		ListNode b = new ListNode(1,a);
 		ListNode c = new ListNode(2,b);
@@ -44,7 +44,7 @@ class DeleteDuplicates{
 		ListNode e = new ListNode(3,d);
 		return a;
 	}
-	public ListNode makeList6(){												// ListNode = [1 2 2 2 3 3] 
+	public ListNode makeList6(){										// ListNode = [1 2 2 2 3 3] 
 		ListNode a = new ListNode(1);
 		ListNode b = new ListNode(2,a);
 		ListNode c = new ListNode(2,b);
