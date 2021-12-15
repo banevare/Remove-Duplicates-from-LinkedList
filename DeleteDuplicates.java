@@ -63,60 +63,59 @@ class DeleteDuplicates{
 		return s == null ? "" : s;
 	}
     public static void test0(String ta){										
-		DeleteDuplicates s = new DeleteDuplicates();
-		ListNode head = s.makeList0();
-		String tb = "";
-		String rb = s.print(head);
-		assert(tb.equals(rb));
-
-		ListNode r = s.deleteDuplicates(head);
-		String ra = s.print(r);
-		assert(ta.equals(ra));
+	    DeleteDuplicates s = new DeleteDuplicates();
+	    ListNode head = s.makeList0();
+	    String tb = "";
+	    String rb = s.print(head);
+	    assert(tb.equals(rb));
+	    
+	    ListNode r = s.deleteDuplicates(head);
+	    String ra = s.print(r);
+	    assert(ta.equals(ra));
 	}
     public static void test1(String ta){										
-		DeleteDuplicates s = new DeleteDuplicates();
-		ListNode head = s.makeList1();
-		String tb = "1";
-		String rb = s.print(head);
-		assert(tb.equals(rb));
-
-		ListNode r = s.deleteDuplicates(head);
-		String ra = s.print(r);
-		assert(ta.equals(ra));
+	    DeleteDuplicates s = new DeleteDuplicates();
+	    ListNode head = s.makeList1();
+	    String tb = "1";
+	    String rb = s.print(head);
+	    assert(tb.equals(rb));
+	    
+	    ListNode r = s.deleteDuplicates(head);
+	    String ra = s.print(r);
+	    assert(ta.equals(ra));
 	}
     public static void test3(String ta){										
 	    DeleteDuplicates s = new DeleteDuplicates();
-        ListNode head = s.makeList3();
-       	String tb = "1 2 3";
-		String rb = s.print(head);
-		assert(tb.equals(rb));
-
-        ListNode r = s.deleteDuplicates(head);
-        String ra = s.print(r);
-		assert(ta.equals(ra));
+	    ListNode head = s.makeList3();
+	    String tb = "1 2 3";
+	    String rb = s.print(head);
+	    assert(tb.equals(rb));
+	    
+	    ListNode r = s.deleteDuplicates(head);
+	    String ra = s.print(r);
+	    assert(ta.equals(ra));
     }
     public static void test5(String ta){										
-		DeleteDuplicates s = new DeleteDuplicates();
-       ListNode head = s.makeList5();
-		String tb = "1 1 2 3 3";
-		String rb = s.print(head);
-		assert(tb.equals(rb));
+	    DeleteDuplicates s = new DeleteDuplicates();
+	    ListNode head = s.makeList5();
+	    String tb = "1 1 2 3 3";
+	    String rb = s.print(head);
+	    assert(tb.equals(rb));
 
-        ListNode r = s.deleteDuplicates(head);
-        String ra = s.print(r);
-		assert(ta.equals(ra));
+	    ListNode r = s.deleteDuplicates(head);
+	    String ra = s.print(r);
+	    assert(ta.equals(ra));
     }
     public static void test6(String ta){										
-		DeleteDuplicates s = new DeleteDuplicates();
-        ListNode head = s.makeList6();
-		String tb = "1 2 2 2 3 3";
-		String rb = s.print(head);
-        
-		assert(tb.equals(rb));
+	    DeleteDuplicates s = new DeleteDuplicates();
+	    ListNode head = s.makeList6();
+	    String tb = "1 2 2 2 3 3";
+	    String rb = s.print(head);
+	    assert(tb.equals(rb));
 
-        ListNode r = s.deleteDuplicates(head);
-        String ra = s.print(r);
-		assert(ta.equals(ra));
+	    ListNode r = s.deleteDuplicates(head);
+	    String ra = s.print(r);
+	    assert(ta.equals(ra));
     }
     public static void main(String args[]){
         test0("");
